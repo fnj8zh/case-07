@@ -8,7 +8,7 @@ import os
 # These are read from environment variables (set in Colab or your terminal)
 STORAGE_ACCOUNT_URL = os.getenv("STORAGE_ACCOUNT_URL")
 CONTAINER_NAME = "lanternfly-images-ks2h6ji7"
-AZURE_CONNECTION_STRING = "DefaultEndpointsProtocol=https;AccountName=fnj8zhcase7;AccountKey=noOxS4trF4fVvqs71xm+PAEHyTR5AQI6XBqhPTswGhLWLRhJD1ac0wriBAZbv4b6w8G5qVK2HrPb+AStQpzLkQ==;EndpointSuffix=core.windows.net"
+AZURE_CONNECTION_STRING = 
 # --- Create Blob Service Client ---
 bsc = BlobServiceClient.from_connection_string(AZURE_CONNECTION_STRING)
 cc = bsc.get_container_client(CONTAINER_NAME)
